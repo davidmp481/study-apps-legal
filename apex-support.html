@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apex — Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 720px; margin: 0 auto; padding: 40px 22px 80px; color: #1c1c1e; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e5e5e7; background: #000; } a { color: #6ea8fe; } }
+  h1 { font-size: 30px; margin-bottom: 4px; }
+  h2 { font-size: 20px; margin-top: 34px; }
+  .tagline { color: #8a8a8e; font-size: 15px; margin-bottom: 8px; }
+  a { color: #0b6b45; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+</style>
+</head>
+<body>
+
+<h1>Apex Support</h1>
+<p class="tagline">Ski and snowboard session tracking for iPhone.</p>
+
+<h2>Contact</h2>
+<p>For help, questions, or feature requests, email
+<a href="mailto:davidmpeterson1998@gmail.com">davidmpeterson1998@gmail.com</a>.
+We aim to reply within 1–2 business days.</p>
+
+<h2>How do I record a day?</h2>
+<p>Open Apex, tap <strong>Start a session</strong>, name it, and tap
+<strong>Start recording</strong>. Allow location when asked, and choose
+<strong>Precise</strong> — without precise location, speed and route are unreliable.
+Then put the phone in a zipped pocket. Recording continues with the screen locked.</p>
+
+<h2>Does it keep recording when my phone is in my pocket?</h2>
+<p>Yes. Apex uses background location, and iOS shows the blue location indicator while a
+session is running. Force-quitting Apex from the app switcher stops recording, and iOS
+may stop it if your battery dies. If a session is interrupted, Apex offers it back as a
+paused recording when you reopen the app — it never invents the time it missed.</p>
+
+<h2>My vertical or speed looks wrong.</h2>
+<p>Phone GPS is not a survey instrument. Apex discards poor fixes, requires a second
+reading to support a top speed, and uses an altitude deadband so noise does not pile up
+as vertical, but trees, gondolas, weather, and pocket position all affect it. If Apex
+labelled a lift as a run or a break as a queue, open the session, go to
+<strong>Lifts</strong>, tap the segment and correct it — the totals recalculate.</p>
+
+<h2>Are the lift wait times real resort wait times?</h2>
+<p>No. Apex has no resort feed of any kind. Every queue and lift figure is a timing of
+your own recording, on the day you recorded it. It cannot tell you how long a line is
+right now.</p>
+
+<h2>How accurate is jump detection?</h2>
+<p>It is experimental and has not been validated on snow. Apex looks for a drop in
+acceleration followed by an impact while you are moving downhill, and every detection
+has to be reviewed by you before it counts. Estimated distance is approach speed
+multiplied by estimated airtime, not a measurement of the takeoff-to-landing distance.
+Landing acceleration is shown as a raw sensor reading — Apex deliberately does not give
+a landing smoothness score, because nothing has been calibrated to support one. Expect
+both missed jumps and false detections, especially in moguls or on rough snow.</p>
+
+<h2>What is the run pattern score?</h2>
+<p>A heuristic about consistency and flow: 70% steadiness of speed and 30% regularity of
+GPS direction changes. A straight, steady groomer can score higher than a demanding
+technical run. It is not a measure of skill, control, or safe riding, and it is not a
+safety rating.</p>
+
+<h2>What does it do to my battery?</h2>
+<p>Continuous GPS, and the accelerometer when park detection is on, use meaningfully
+more battery than a phone sitting idle. Carry a charger for a full day. If you only want
+route and vertical, turn off park detection in Settings to reduce sensor use. Full-day
+battery use has not yet been measured on a physical iPhone.</p>
+
+<h2>Where is my data, and how do I back it up?</h2>
+<p>Everything stays on your iPhone; there is no account and no server. Go to
+<strong>More &gt; Settings &amp; data &gt; Prepare JSON backup</strong> to write a backup
+file you can save or send wherever you like. Import merges anything missing without
+overwriting what you already have. Backups contain your recorded routes, so keep them
+somewhere private. Attached videos are not included in a JSON backup.</p>
+
+<h2>What is the demo session?</h2>
+<p>Illustrative sample data, labelled as a demo everywhere it appears, so you can see
+what the app looks like before you ride. It is excluded from your personal records and
+season totals, and you can remove it in Settings &amp; data.</p>
+
+<h2>Apex says my saved data could not be opened.</h2>
+<p>Apex will not overwrite a data file it cannot read. Export a backup from Settings
+first — that exports the original file untouched — then email it to us and we will help
+you recover what is in it.</p>
+
+<h2>Is there an Apple Watch app, or trail navigation?</h2>
+<p>No. Apex is iPhone-only, and it has no trail map, no open/closed status, no route
+recommendations, and no automatic trick recognition.</p>
+
+<h2>Privacy</h2>
+<p>See the <a href="apex-privacy.html">Apex Privacy Policy</a>.</p>
+
+</body>
+</html>
